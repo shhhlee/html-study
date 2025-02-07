@@ -1,0 +1,72 @@
+.nav-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    
+}
+
+.nav-item {
+    flex: 1 1 25%;
+    text-align: center;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.sub-item {
+    flex: 1 1 25%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.product-container {
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.product-container div {
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+/* 태블릿 화면: 2행 2열 */
+@media screen and (max-width: 768px) {
+    .product-container div {
+        width: 50%;
+    }
+
+    .product-container {
+        max-width: 600px;
+    }
+}
+
+/* 모바일 화면: 4행 1열 */
+@media screen and (max-width: 580px) {
+    .product-container div {
+        width: 100%;
+    }
+
+    .product-container {
+        max-width: 600px;
+    }
+}
+
+/* 태블릿 화면: 2행 2열 */
+@media screen and (max-width: 768px) {
+    .nav-item, .sub-item {
+        flex: 1 1 50%; /* 2개씩 배치 */
+    }
+}
+
+/* 모바일 화면: 4행 1열 */
+@media screen and (max-width: 480px) {
+    .nav-item, .sub-item {
+        flex: 1 1 100%; /* 1개씩 배치 */
+    }
+}
